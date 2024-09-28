@@ -8,11 +8,11 @@ data associated with a book, including its title, author, and rating.
 The function should return the dictionary for the book with the highest rating.
 '''
 def highest_rated(books):
-    if books == None:
+    if not books:
         return None
     else:
         highest_book = books[0]
-        for book in books:
+        for book in books[1:]:
             if book["rating"] > highest_book["rating"]:
                 highest_book=book
     return highest_book
