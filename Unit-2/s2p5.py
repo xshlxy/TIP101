@@ -18,6 +18,6 @@ def find_majority_element(elements):
     return None
 #Example Usage:
 
-elements = [2, 1, 1, 1, 1, 2, 2]
+elements = [2, 2, 1, 1, 1, 2, 2]
 print(find_majority_element(elements))
 #Example Output: 2

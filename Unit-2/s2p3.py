@@ -1,5 +1,5 @@
 '''
-Problem 11:
+Problem 3:
 Given a dictionary tasks where keys are task names and values are priorities
  (1-10, where 10 is the highest priority), write a function 
  get_highest_priority_task() that removes the task with the highest priority 
