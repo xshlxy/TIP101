@@ -5,7 +5,14 @@ it finds the first non-repeating character in it and returns its index.
 If it does not exist, then return -1.
 '''
 def first_unique_char(my_str):
-    pass
+    seen = {}
+    for char in my_str:
+        if my_str.count(char) == 1:
+            return my_str.find(char)
+    return -1
+            
+        
+    
 #Example Usage:
 
 my_str = "leetcode"
