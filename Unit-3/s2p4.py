@@ -1,9 +1,19 @@
 '''
 Problem 4: Longest Uniform Substring
-Write a function longest_uniform_substring() that takes in a string s and returns the length of the longest uniform substring. A uniform substring consists of a single repeated character.
+Write a function longest_uniform_substring() that takes in a string s and returns the length of the longest uniform substring.
+A uniform substring consists of a single repeated character.
 '''
 def longest_uniform_substring(s):
-    pass
+    uniform = {}
+    idx = 0
+    for i in range(0,len(s)):
+        if s[i] not in uniform:
+            uniform[s[i]] = 1
+            idx += 1
+        elif s[i] == s[idx]:
+            uniform[s[i]] += 1
+            idx += 1
+    return max(uniform.values())
 #Example Usage:
 
 s1 = "aabbbbCdAA"
